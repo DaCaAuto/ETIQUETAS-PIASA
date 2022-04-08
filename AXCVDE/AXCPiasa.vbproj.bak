@@ -1,0 +1,507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F70E8B5-FD09-4145-A5C6-DAC10F11F22C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AXCVDE.My.MyApplication</StartupObject>
+    <RootNamespace>AXCVDE</RootNamespace>
+    <AssemblyName>AXCVDE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AXCVDE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AXCCiesa.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_x_150x150_01_Egb_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Conexion\AccesoDatos.vb" />
+    <Compile Include="Clases\Conexion\CAccesoDatos.vb" />
+    <Compile Include="Clases\Conexion\clsDato.vb" />
+    <Compile Include="Clases\Conexion\CMetodos.vb" />
+    <Compile Include="Clases\Conexion\CResultado.vb" />
+    <Compile Include="Clases\Conexion\DatosTemporales.vb" />
+    <Compile Include="Clases\Conexion\Metodos.vb" />
+    <Compile Include="Clases\Conexion\Module1.vb" />
+    <Compile Include="Clases\Conexion\RawPrinter.vb" />
+    <Compile Include="Clases\Datos\CConfigAlmacen.vb" />
+    <Compile Include="Clases\Datos\clsAlmacen.vb" />
+    <Compile Include="Clases\Datos\clsConfiguracionAlmacen.vb" />
+    <Compile Include="Clases\Datos\clsConsEM.vb" />
+    <Compile Include="Clases\Datos\clsConsOP.vb" />
+    <Compile Include="Clases\Datos\clsCuarentena.vb" />
+    <Compile Include="Clases\Datos\ClsDevoluciones.vb" />
+    <Compile Include="Clases\Datos\clsExistencias.vb" />
+    <Compile Include="Clases\Datos\clsHerramientas.vb" />
+    <Compile Include="Clases\Datos\clsImpresiones.vb" />
+    <Compile Include="Clases\Datos\clsImpresora.vb" />
+    <Compile Include="Clases\Datos\clsMaterialRecibido.vb" />
+    <Compile Include="Clases\Datos\clsNumParte.vb" />
+    <Compile Include="Clases\Datos\clsOrdenCompra.vb" />
+    <Compile Include="Clases\Datos\clsOrdenProd.vb" />
+    <Compile Include="Clases\Datos\clsPlanta.vb" />
+    <Compile Include="Clases\Datos\clsTransfer.vb" />
+    <Compile Include="Clases\Datos\clsUsuario.vb" />
+    <Compile Include="Clases\Datos\COrdenCompraR.vb" />
+    <Compile Include="Clases\Datos\COrdenProd.vb" />
+    <Compile Include="Clases\Datos\CPicking.vb" />
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FluentDesignForm1.Designer.vb">
+      <DependentUpon>FluentDesignForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FluentDesignForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\FrmAgregaRack.Designer.vb">
+      <DependentUpon>FrmAgregaRack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\FrmAgregaRack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\FrmAjustesConfiguracionAlmacen.Designer.vb">
+      <DependentUpon>FrmAjustesConfiguracionAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\FrmAjustesConfiguracionAlmacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\FrmConfiguracionAlmacen.Designer.vb">
+      <DependentUpon>FrmConfiguracionAlmacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\FrmConfiguracionAlmacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\Prioridad de PICKING\FrmConfiguracionMaxYMin.Designer.vb">
+      <DependentUpon>FrmConfiguracionMaxYMin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\Prioridad de PICKING\FrmConfiguracionMaxYMin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\Prioridad de PICKING\FrmPrioridadReabastecimiento.Designer.vb">
+      <DependentUpon>FrmPrioridadReabastecimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Configuración de almacen\Prioridad de PICKING\FrmPrioridadReabastecimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmEjercicioInvArticulo.Designer.vb">
+      <DependentUpon>FrmEjercicioInvArticulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmEjercicioInvArticulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmEjercicioInvPosicion.Designer.vb">
+      <DependentUpon>FrmEjercicioInvPosicion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmEjercicioInvPosicion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmEjercicioInvTotal.Designer.vb">
+      <DependentUpon>FrmEjercicioInvTotal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmEjercicioInvTotal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmMenuInventarios.Designer.vb">
+      <DependentUpon>FrmMenuInventarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmMenuInventarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmMonitorInventarios.Designer.vb">
+      <DependentUpon>FrmMonitorInventarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmMonitorInventarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmReportePorFechasInv.Designer.vb">
+      <DependentUpon>FrmReportePorFechasInv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmReportePorFechasInv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmResultadoInventario.Designer.vb">
+      <DependentUpon>FrmResultadoInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Inventarios\FrmResultadoInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmConsultarOrdenesCompra.Designer.vb">
+      <DependentUpon>FrmConsultarOrdenesCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmConsultarOrdenesCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmEliminarDocRecepcion.Designer.vb">
+      <DependentUpon>FrmEliminarDocRecepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmEliminarDocRecepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmLiberaOrdenCompra.Designer.vb">
+      <DependentUpon>FrmLiberaOrdenCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmLiberaOrdenCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmMonitorRecepcion.Designer.vb">
+      <DependentUpon>FrmMonitorRecepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmMonitorRecepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmRepRecFechas.Designer.vb">
+      <DependentUpon>FrmRepRecFechas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\FrmRepRecFechas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\Recepcion\FrmRecibosOC.Designer.vb">
+      <DependentUpon>FrmRecibosOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Administración\Orden de compra\Recepcion\FrmRecibosOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Herramientas\FrmConfiguracionImpresora.Designer.vb">
+      <DependentUpon>FrmConfiguracionImpresora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Herramientas\FrmConfiguracionImpresora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Herramientas\FrmReferencia.Designer.vb">
+      <DependentUpon>FrmReferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Herramientas\FrmReferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Herramientas\FrmTrazabilidad.Designer.vb">
+      <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Herramientas\FrmTrazabilidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Princiales\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Princiales\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Princiales\SplashAXC.Designer.vb">
+      <DependentUpon>SplashAXC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Princiales\SplashAXC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Princiales\XtraForm2.Designer.vb">
+      <DependentUpon>XtraForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Princiales\XtraForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ReportesNuevos\DevRepRecibosOC.Designer.vb">
+      <DependentUpon>DevRepRecibosOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesNuevos\DevRepRecibosOC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportesNuevos\DevRepResultadoInventario.Designer.vb">
+      <DependentUpon>DevRepResultadoInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesNuevos\DevRepResultadoInventario.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportesNuevos\XtraReport1.Designer.vb">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesNuevos\XtraReport1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Web References\wsAXC\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FluentDesignForm1.resx">
+      <DependentUpon>FluentDesignForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Configuración de almacen\FrmAgregaRack.resx">
+      <DependentUpon>FrmAgregaRack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Configuración de almacen\FrmAjustesConfiguracionAlmacen.resx">
+      <DependentUpon>FrmAjustesConfiguracionAlmacen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Configuración de almacen\FrmConfiguracionAlmacen.resx">
+      <DependentUpon>FrmConfiguracionAlmacen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Configuración de almacen\Prioridad de PICKING\FrmConfiguracionMaxYMin.resx">
+      <DependentUpon>FrmConfiguracionMaxYMin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Configuración de almacen\Prioridad de PICKING\FrmPrioridadReabastecimiento.resx">
+      <DependentUpon>FrmPrioridadReabastecimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Inventarios\FrmEjercicioInvArticulo.resx">
+      <DependentUpon>FrmEjercicioInvArticulo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Inventarios\FrmEjercicioInvPosicion.resx">
+      <DependentUpon>FrmEjercicioInvPosicion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Inventarios\FrmEjercicioInvTotal.resx">
+      <DependentUpon>FrmEjercicioInvTotal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Inventarios\FrmMenuInventarios.resx">
+      <DependentUpon>FrmMenuInventarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Inventarios\FrmMonitorInventarios.resx">
+      <DependentUpon>FrmMonitorInventarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Inventarios\FrmReportePorFechasInv.resx">
+      <DependentUpon>FrmReportePorFechasInv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Inventarios\FrmResultadoInventario.resx">
+      <DependentUpon>FrmResultadoInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Orden de compra\FrmConsultarOrdenesCompra.resx">
+      <DependentUpon>FrmConsultarOrdenesCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Orden de compra\FrmEliminarDocRecepcion.resx">
+      <DependentUpon>FrmEliminarDocRecepcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Orden de compra\FrmLiberaOrdenCompra.resx">
+      <DependentUpon>FrmLiberaOrdenCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Orden de compra\FrmMonitorRecepcion.resx">
+      <DependentUpon>FrmMonitorRecepcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Orden de compra\FrmRepRecFechas.resx">
+      <DependentUpon>FrmRepRecFechas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Administración\Orden de compra\Recepcion\FrmRecibosOC.resx">
+      <DependentUpon>FrmRecibosOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Herramientas\FrmConfiguracionImpresora.resx">
+      <DependentUpon>FrmConfiguracionImpresora.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Herramientas\FrmReferencia.resx">
+      <DependentUpon>FrmReferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Herramientas\FrmTrazabilidad.resx">
+      <DependentUpon>FrmTrazabilidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Princiales\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Princiales\SplashAXC.resx">
+      <DependentUpon>SplashAXC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Princiales\XtraForm2.resx">
+      <DependentUpon>XtraForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesNuevos\DevRepRecibosOC.resx">
+      <DependentUpon>DevRepRecibosOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesNuevos\DevRepResultadoInventario.resx">
+      <DependentUpon>DevRepResultadoInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesNuevos\XtraReport1.resx">
+      <DependentUpon>XtraReport1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Web References\wsAXC\CEmpaque.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsAXC\COrdenesCompra.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsAXC\CResultado.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsAXC\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsAXC\wsaxcmp.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AXC-JL2020-Final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-AXC2020-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-AXC2020-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_X_150x150_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo-Automatica-transparente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_x_150x150_01_Egb_icon.ico" />
+    <None Include="Web References\wsAXC\wsaxcmp.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://192.168.1.181/axcciesapt/wsaxcmp.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsAXC\</RelPath>
+      <UpdateFromURL>http://192.168.1.181/axcciesapt/wsaxcmp.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>AXCCiesa_wsAXC_wsAXCMP</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
